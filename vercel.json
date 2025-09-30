@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "vercel_email_manager.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/vercel_email_manager.html"
+    },
+    {
+      "src": "/email-manager",
+      "dest": "/vercel_email_manager.html"
+    }
+  ]
+}
