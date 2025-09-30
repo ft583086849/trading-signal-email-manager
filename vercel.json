@@ -4,6 +4,14 @@
     {
       "src": "vercel_email_manager.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "api/subscribers.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/subscribers/[email].js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -14,6 +22,14 @@
     {
       "src": "/email-manager",
       "dest": "/vercel_email_manager.html"
+    },
+    {
+      "src": "/api/subscribers",
+      "dest": "/api/subscribers.js"
+    },
+    {
+      "src": "/api/subscribers/(.*)",
+      "dest": "/api/subscribers/[email].js"
     }
   ]
 }
