@@ -321,8 +321,8 @@
     </div>
 
     <script>
-        // 直接连接服务器API（服务器已配置CORS）
-        const API_BASE = 'http://128.199.68.77/api';
+        // 使用Vercel API代理
+        const API_BASE = '/api';
         
         function updateServerStatus() {
             const statusElement = document.getElementById('serverStatus');

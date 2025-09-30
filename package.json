@@ -7,7 +7,8 @@
     "start": "serve -s . -l 3000"
   },
   "dependencies": {
-    "serve": "^14.2.0"
+    "serve": "^14.2.0",
+    "node-fetch": "^2.6.7"
   },
   "keywords": ["trading", "signal", "email", "subscription"],
   "author": "TradingSignalHub",
