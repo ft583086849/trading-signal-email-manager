@@ -321,8 +321,8 @@
     </div>
 
     <script>
-        // 使用CORS代理连接到服务器API
-        const API_BASE = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('http://128.199.68.77/api');
+        // 直接连接服务器API（服务器已配置CORS）
+        const API_BASE = 'http://128.199.68.77/api';
         
         function updateServerStatus() {
             const statusElement = document.getElementById('serverStatus');
